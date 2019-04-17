@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="clock.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/flexslider.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="clock.js"></script>
+</head>
+
+<body>
+    <!-- slider block -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="Images/ginkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kinkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kitashirakawatenjingu.jpg" style="height: 300px; width:100% " />
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <!-- ################################################################### -->
+    <!-- nav bar block  -->
+    <nav class="navbar">
+        <ul class="main-nav">
+            <li><a href="index.html"><button class="nav-links">Top Page</button></a></li>
+            <li><a href="score.html"><button class="nav-links">Score</button></a></li>
+            <li><a href="shop.html"> <button class="nav-links">Shop</button></a></li>
+            <li><a href="jsworld.html"><button class="nav-links">JS World</button></a></li>
+            <li><a href="form.html"><button class="nav-links">Form</button></a></li>
+            <li><a href="map.html"><button class="nav-links">GoogleMaps</button></a></li>
+            <li><a href="animation.html"><button class="nav-links">Animation</button></a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="left">
+        <div class="card">
+            <div>
+                <img src="Images/kenshin.jpg" height="100px" width="100px" id="profile">
+            </div>
+            <h6>Regesh Maharjan</h6>
+            <h6>M18W7332</h6>
+            <p class="title">Master's Degree Student</p>
+            <p class="title">KCGI</p>
+            <a href="https://github.com/dizzy-dizzy"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/regesh-maharjan-12b368106/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/maharjan.dizzywhy"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <canvas></canvas>
+    </div>
+
+    <div class="right">
+        <div class="analog-clock">
+            <svg width="135" height="135">
+                <circle id="clock-face" cx="70" cy="70" r="65" />
+                <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+                <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+                <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+                <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+                <text x="62" y="18">12</text>
+                <text x="126" y="76">3</text>
+                <text x="66" y="130">6</text>
+                <text x="7" y="76">9</text>
+            </svg>
+        </div>
+        <div class="time-text">
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span id="suffix">--</span>
+        </div>
+        <br>
+        <br>
+        <a href="animation1.html"><button id="mybutton">Animation 1</button></a>
+        <a href="animation2.html"><button id="mybutton">Animation 2</button></a>
+        <a href="animation3.html"><button id="mybutton">Animation 3</button></a>
+    </div>
+    <script src="myslidercontrol.js"></script>
+    <script src="animation.js"></script>
+    <footer class="footer">
+        Credits to W3school.com,kirupa.com
+    </footer>
+</body>
+
+</html>

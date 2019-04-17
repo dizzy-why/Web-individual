@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="clock.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/flexslider.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="homework3.css">
+    <script src="homework3.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="clock.js"></script>
+</head>
+
+<body>
+    <!-- slider block -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="Images/ginkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kinkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kitashirakawatenjingu.jpg" style="height: 300px; width:100% " />
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <!-- ################################################################### -->
+    <!-- nav bar block  -->
+    <nav class="navbar">
+        <ul class="main-nav">
+            <li><a href="index.html"><button class="nav-links">Top Page</button></a></li>
+            <li><a href="score.html"><button class="nav-links">Score</button></a></li>
+            <li><a href="shop.html"> <button class="nav-links">Shop</button></a></li>
+            <li><a href="jsworld.html"><button class="nav-links">JS World</button></a></li>
+            <li><a href="form.html"><button class="nav-links">Form</button></a></li>
+            <li><a href="map.html"><button class="nav-links">GoogleMaps</button></a></li>
+            <li><a href="animation.html"><button class="nav-links">Animation</button></a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="left">
+        <div class="card">
+            <div>
+                <img src="Images/kenshin.jpg" alt="nepic" height="100px" width="100px" id="profile">
+            </div>
+            <h6>Regesh Maharjan</h6>
+            <h6>M18W7332</h6>
+            <p class="title">Master's Degree Student</p>
+            <p class="title">KCGI</p>
+            <a href="https://github.com/dizzy-dizzy"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/regesh-maharjan-12b368106/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/maharjan.dizzywhy"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <div class="main" id="diffcolor">
+        <nav class="grid-container" id="mynav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="position:relative; margin-right:200pt; width:80pt;"><i
+                        class="fas fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div><button class="dropbtn" style="width:100pt; background-color:green;" onclick="changecolor('mynav','green')">Green</button></div>
+                    <div><button class="dropbtn" style="width:100pt;background-color:yellow;" onclick="changecolor('mynav','yellow')">Yellow</button></div>
+                    <div><button class="dropbtn" style="width:100pt;background-color:red;" onclick="changecolor('diffcolor','red')">Red</button></div>
+                    <div><button class="dropbtn" style="width:100pt;background-color:blue;" onclick="changecolor('diffcolor','blue')">Blue</button></div>
+                    <div><button class="dropbtn" style="width:100pt;background-color:cyan;" onclick="changecolor('myform1','cyan')">Cyan</button></div>
+                </div>
+            </div>
+            <div>
+                <h6 id="s1" onmouseover=s1.style.color="whitesmoke" onmouseout=s1.style.color="black">JavaScriptWorld</h6>
+            </div>
+            <div style="position: relative; margin-left:12pt">
+                <button class="dropbtn" style="background-color:lightgreen; border-radius: 20pt; width:20pt;" onclick="openWindow()"><i
+                        class="far fa-folder-open"></i></button>
+                <button style="background-color:blueviolet; border-radius: 20pt; width:20pt;" class="dropbtn" onclick="moveWindow()"><i
+                        class="fas fa-arrows-alt"></i></button>
+                <button style="background-color:blue; border-radius: 20pt; width:20pt;" class="dropbtn" onclick="resizeWindow()"><i
+                        class="far fa-window-maximize"></i></button>
+                <button style="background-color:red; border-radius: 20pt; width:20pt;" class="dropbtn" onclick="closeWindow()"><i
+                        class="fas fa-times"></i></button>
+            </div>
+        </nav>
+        <div style="padding-top:10px;">
+            <div class="container" id="myform1">
+                <form id="formid" method="GET" name="myform" action="homework3.html">
+                    <p>1. Please input your Lastname</p>
+                    <input type="text" name="username" size="15" />
+                    <input id="mybutton" type="button" value="click" onclick="namealert()" />
+                    <input id="mybutton" type="button" value="set" onclick="setName()" />
+                    <input id="mybutton" type="reset" value="Reset" name="Reset" />
+                </form>
+                <form id="formid" name="gd" method="GET" action="homework3.html">
+                    <p>2.Please select your gender</p>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <br><br>
+                    <input id="mybutton" type="button" value="Choose your gender" id="mysubmit" onclick=galert()>
+                    <input id="mybutton" type="reset" value="Reset" name="Reset" />
+                </form>
+                <form name="langsel" method="GET" id="formid" action="homework3.html">
+                    <p>3.please select the language</p>
+                    <input type="checkbox" name="language" value="English">English
+                    <input type="checkbox" name="language" value="Japanese">Japanese
+                    <input type="checkbox" name="language" value="Nepali">Nepali
+                    <input type="checkbox" name="language" value="Newari">Newari
+                    <input type="checkbox" name="language" value="Hindi">Hindi
+                    <input type="checkbox" name="language" value="Other">Others
+                    <br><br>
+                    <input id="mybutton" type="button" value="Languages you have learned" id="mysubmit" onclick=glang()>
+                    <input id="mybutton" type="reset" value="Reset" name="Reset" />
+                </form>
+                <form id="formid" name="course" action="homework3.html">
+                    <p>4.The course in KCGI</p>
+                    <select id="mybutton" name="KCGgroup">
+                        <option value="Web Programming II">Web Programming II</option>
+                        <option value="Fundamentals of Database">Fundamentals of Database</option>
+                        <option value="Data Structures and Algorithm">Data Structures and Algorithm</option>
+                        <option value="System Administration">System Administration</option>
+                        <option value="ICT">ICT</option>
+                    </select>
+                    <br><br>
+                    <input id="mybutton" type="button" value="Display course" name="mysubmit" onclick=coalert() />
+                    <input id="mybutton" type="reset" value="Reset" name="Reset" />
+                    <br><br>
+                    <input id="mybutton" type="submit" value="Submit" onclick="displaySubmit('thank you for submitting your details')"
+                        value="submit" />
+                </form>
+                <div class="#container">
+                    <img width="300px" height="250px" src="https://www.syfy.com/sites/syfy/files/styles/1200x1200/public/the-grinch-poster-slice-600x200.jpg?itok=RRh3wQja&timestamp=1513817876"
+                        onmouseover="this.src='https://cdn.pastemagazine.com/www/articles/GrinchPOster_header.jpg'"
+                        onmouseout="this.src='https://www.syfy.com/sites/syfy/files/styles/1200x1200/public/the-grinch-poster-slice-600x200.jpg?itok=RRh3wQja&timestamp=1513817876'">
+                </div>
+                <a href="https://www.syfy.com/sites/syfy/files/styles/1200x1200/public/the-grinch-poster-slice-600x200.jpg?itok=RRh3wQja&timestamp=1513817876">Image
+                    source</a>
+                <br>
+                <br>
+                <div>
+                    <button id="mybutton" onclick="changePicture(1)">Image1</button>
+                    <button id="mybutton" onclick="changePicture(2)">Image2</button>
+                    <button id="mybutton" onclick="changePicture(3)">Image3</button>
+                </div>
+                <br>
+                <div>
+                    <img id="changepic" width="300px" height="350px" src="Images/dragon.jpg">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="analog-clock">
+            <svg width="135" height="135">
+                <circle id="clock-face" cx="70" cy="70" r="65" />
+                <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+                <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+                <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+                <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+                <text x="62" y="18">12</text>
+                <text x="126" y="76">3</text>
+                <text x="66" y="130">6</text>
+                <text x="7" y="76">9</text>
+            </svg>
+        </div>
+        <br>
+        <br>
+        <div class="time-text">
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span id="suffix">--</span>
+        </div>
+    </div>
+    <script src="myslidercontrol.js"></script>
+    <footer class="footer">Credits to W3school.com<br>
+        <a href="https://hlj.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/c/a/cap09720_0.jpg">Image
+            1</a>
+        <a href="https://cdn.shopify.com/s/files/1/0108/8064/7225/products/61d0e6b2-6ba2-4155-b8f7-8224743c514b_1024x1024.jpg?v=1530536151">Image
+            2</a>
+        <a href="https://d2ev13g7cze5ka.cloudfront.net/gsc/gsc90605_0_1532577692.jpg?v=1532577692">Image 3</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h6 {
+    color: whitesmoke;
+}
+
+.title {
+    color: whitesmoke;
+}
+
+.time-text {
+    color: whitesmoke;
+}
+
+#profile {
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(260deg, #0e4242 40%, #808080 80%);
+}
+
+.navbar {
+    font-size: 20px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: #212933;
+}
+
+#maindiv {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.main-nav {
+    list-style-type: none;
+}
+
+.nav-links {
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    background-color: darkslategray;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 8px;
+    margin: auto;
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.nav-links:hover {
+    background-color: #808080;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    /* overflow: auto; */
+}
+
+.main-nav {
+    list-style-type: none;
+    display: block;
+}
+
+.left {
+    background-color: #202626;
+    padding: 20px;
+    float: left;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* The width is 20%, by default */
+}
+
+.right {
+    background-color: #202626;
+    padding: 20px;
+    float: left;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: auto;
+    margin:auto;
+    /* The width is 20%, by default */
+}
+
+.footer {
+    background-color: rgb(3, 61, 56);
+    padding: 20px;
+    float: left;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.main {
+    padding: 20px;
+    float: left;
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+    background-color:#212933;
+}
+
+#table1 {
+    margin: auto;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-collapse: separate;
+    table-layout: fixed;
+    border-spacing: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+#viewImg{
+    margin: auto;
+    padding: 10px;
+}
+
+#listImg {
+    width: 100%;
+    height: 200px;
+}
+
+#Myoverlay:hover {
+    opacity: 0.3;
+
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orangered;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+#iframeR {
+    max-width: 100%;
+    height: 300px;
+}
+
+.mytoggler {
+    background-color: darkslategray;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.active, .mytoggler:hover {
+    background-color: gray;
+}
+
+.mytoggler:after {
+    content: '\002B';
+    color: bisque;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    color: bisque;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: bisque;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#mybutton{
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    background-color: darkslategray;
+    color: whitesmoke;
+    cursor: pointer;
+    padding-top: 10px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    position: relative;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  #mybutton:hover {
+    background-color:#808080;
+  }
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 80px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 40px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin: 10px;
+        padding: 10pt;
+    }
+    .left {
+        padding: 10px;
+        width: 20%;
+        height: auto;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 0px;
+    }
+    .main {
+        padding: 10px;
+        width: 60%;
+        height: auto;
+    }
+    #shopID {
+        padding: 10px;
+        width: 60%;
+        height: 600px;
+        display: grid;
+        float: left;
+        background-color: #212933;
+        grid-template-columns: 1fr 2fr;
+    }
+    .right {
+        padding: 10px;
+        width: 20%;
+        height: auto;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .footer {
+        padding: 10px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #212933;
+        text-align: center;
+        float: right;
+    }
+    #viewImg {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+    #listImg {
+        width: 100%;
+        height: 500px;
+    }
+    #table1 {
+        /* margin: auto; */
+        height: auto;
+        padding: 10px
+    }
+    canvas {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+    }
+    #iframeR {
+        max-width: 95%;
+        height: 300px;
+        margin: 0;
+    }
+    input[type=text], select, textarea {
+        width: 60%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+}

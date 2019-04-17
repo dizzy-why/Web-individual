@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/flexslider.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="map.js"></script>
+
+
+</head>
+
+<body>
+    <!-- slider block -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="Images/ginkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kinkakuji.jpg" style="height: 300px; width:100% " />
+            </li>
+            <li>
+                <img src="Images/kitashirakawatenjingu.jpg" style="height: 300px; width:100% " />
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <!-- ################################################################### -->
+    <!-- nav bar block  -->
+
+    <nav class="navbar">
+        <ul class="main-nav">
+            <li><a href="index.html"><button class="nav-links">Top Page</button></a></li>
+            <li><a href="score.html"><button class="nav-links">Score</button></a></li>
+            <li><a href="shop.html"> <button class="nav-links">Shop</button></a></li>
+            <li><a href="jsworld.html"><button class="nav-links">JS World</button></a></li>
+            <li><a href="form.html"><button class="nav-links">Form</button></a></li>
+            <li><a href="map.html"><button class="nav-links">GoogleMaps</button></a></li>
+            <li><a href="animation.html"><button class="nav-links">Animation</button></a></li>
+        </ul>
+    </nav>
+    <br>
+    
+    <div class="left">
+        <div class="card">
+            <div>
+                <img src="Images/kenshin.jpg" height="100px" width="100px" id="profile">
+            </div>
+            <h6>Regesh Maharjan</h6>
+            <h6>M18W7332</h6>
+            <p class="title">Master's Degree Student</p>
+            <p class="title">KCGI</p>
+            <a href="https://github.com/dizzy-dizzy"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/regesh-maharjan-12b368106/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/maharjan.dizzywhy"><i class="fa fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div style="max-width: 100%; height: 480px" id="mymap"></div>
+    </div>
+
+    <div class="right">
+        <iframe id="iframeR" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6537.4404790607305!2d135.74923424303418!3d34.988671615883625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108a8228bbce9%3A0x223ec5b1e1af9e3!2z5Lqs6YO944Kz44Oz44OU44Ol44O844K_5a2m6ZmiIOS6rOmDvemnheWJjeagoQ!5e0!3m2!1sen!2sjp!4v1548332284861"
+            allowfullscreen></iframe>
+    </div>
+    <script src="myslidercontrol.js"></script>
+    <footer class="footer">
+        Credits to W3school.com,GooglemapsAPI<br>
+    </footer>
+</body>
+
+</html>

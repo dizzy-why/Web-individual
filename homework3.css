@@ -1,0 +1,163 @@
+#container {
+    max-width: 100%;;
+    height: auto;
+    padding-top: 50px;
+    /* background: whitesmoke; */
+    margin: 0px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    /* -moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    /* -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    /* box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    height: auto;
+    background: whitesmoke;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    -moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+#formid {
+    margin: 10px;
+    border: black;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+}
+
+#inputid {
+    position: relative;
+    margin: 40px;
+    margin-right: 20px;
+    border: black;
+}
+
+.dropbtn {
+    background-color: rgb(7, 119, 194);
+    color: white;
+    padding: 6px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: green;
+}
+
+.show {
+    display: block;
+}
+
+.grid-container {
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    max-width: 100%;
+    grid-gap: 5px;
+    background-color: rgb(5, 133, 73);
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+#container {
+    max-width: 90%;
+    /* padding-top: 50px; */
+    /* background: whitesmoke; */
+    /* margin: auto; */
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    /* -moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    /* -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    /* box-shadow: 0px 0px 28px rgba(0, 0, 0, .3); */
+    overflow: hidden;
+}
+
+.container {
+    width: 450px;
+    height: auto;
+    background: whitesmoke;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    -moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+#formid {
+    margin: 10px;
+    border: black;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+}
+
+#inputid {
+    position: relative;
+    margin: 40px;
+    margin-right: 20px;
+    border: black;
+}
+
+.dropbtn {
+    background-color: rgb(7, 119, 194);
+    color: white;
+    padding: 6px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+}
+
+.show {
+    display: block;
+}
+
+.grid-container {
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: auto;
+    grid-gap: 5px;
+    background-color: rgb(5, 133, 73);
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    font-size: 15px;
+}
+}
