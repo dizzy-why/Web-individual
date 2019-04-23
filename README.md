@@ -1,4 +1,4 @@
-# javascript_tutorial
-javascript project
+# Web programming
+Html CSS JavaScript
 
-#  https://dizzy-why.github.io/javascript_tutorial/index.html
+#  https://dizzy-why.github.io/Web-individual/index.html
